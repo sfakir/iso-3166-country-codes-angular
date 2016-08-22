@@ -36,6 +36,15 @@ You can have access to country codes information and several utilitary methods.
 // Declare the factory as dependency
 angular.module('myApp', ["iso-3166-country-codes"])
   .controller('MyCtrl', function (ISO3166) {
+
+        ISO3166.setLocale('de-de'); // or 'de' or 'de_DE', ...
+
+        $scope.countryList = ISO3166.codeToCountry; // list of German countries..
+        
+
+
+
+
     // Test if a value is a country code
     console.log(ISO3166.isCountryCode('FR')); // true
     console.log(ISO3166.isCountryCode('FRA')); // false
@@ -133,3 +142,4 @@ present and future rights to this software under copyright law.
 ## License
 
 This software is given to the public domain. For more information, see the `UNLICENSE` file.
+
