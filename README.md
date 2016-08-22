@@ -6,7 +6,9 @@ This project is an ISO 3166 (Country codes) module for AngularJS. It provides:
 
 * A service (factory) that gives access to all country codes
 * A filter to print country codes as their standard name (FR -> FRANCE)
+* The filter is locale depending for German and  English locale Settings  (FR-> France or Frankreich)
 * A validation directive to validate country codes
+
 
 ## Get it
 
