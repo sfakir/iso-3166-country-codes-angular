@@ -9,8 +9,13 @@ angular.module('iso-3166-country-codes', [])
         var currentLocale = null;
 
 
+        /**
+         * Updates the locale;
+         * @param locale
+         */
         function setLocale(locale) {
-            if (locale != currentLocale) {
+            locale = getCountryId(locale);
+            if (locale !== currentLocale) {
                 currentLocale = locale;
                 refresh();
             }
