@@ -4,7 +4,7 @@
 
 
 angular.module('iso-3166-country-codes', [])
-    .factory('ISO3166', function ($locale) {
+    .factory('ISO3166', ['$locale',function ($locale) {
 
         var currentLocale = null;
 
@@ -613,7 +613,7 @@ angular.module('iso-3166-country-codes', [])
         holder.setLocale($locale.id);// start with default locale;
 
         return holder;
-    })
+    }])
     .filter('isoCountry', ['ISO3166', function (ISO3166) {
         return function (input) {
             var result = ISO3166.getCountryName(input);
