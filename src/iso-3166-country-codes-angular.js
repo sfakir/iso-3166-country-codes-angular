@@ -6,7 +6,18 @@
 angular.module('iso-3166-country-codes', [])
     .factory('ISO3166', function ($locale) {
 
+        var currentLocale = null;
+
+
+        function setLocale(locale) {
+            if (locale != currentLocale) {
+                currentLocale = locale;
+                refresh();
+            }
+        }
+
         function getCountryList(locale) {
+
             switch (locale) {
                 //Additional country lists can be found here: https://raw.githubusercontent.com/umpirsky/country-list/
                 case 'de':
@@ -527,56 +538,74 @@ angular.module('iso-3166-country-codes', [])
 
         }
 
+        /**
+         * de-de to de
+         * de to de
+         * dexxxx to de
+         * @param locale
+         * @returns {ISO code}
+         */
 
-        var holder = {};
-        var localeId = $locale.id.substring(0, 2);
-
-        holder.codeToCountry = getCountryList(localeId);
-
-
-        holder.countryToCode = {};
-        holder.countryCodes = [];
-
-        for (var key in holder.codeToCountry) {
-            holder.countryToCode[holder.codeToCountry[key]] = key;
-            holder.countryCodes.push(key);
+        function getCountryId(locale) {
+            if (locale.indexOf('-') !== -1) {
+                return locale.split('-')[0].toUpperCase();
+            }
+            return locale.substring(0, 2).toUpperCase();
         }
 
-        holder.isCountryCode = function (input) {
-            if (angular.isString(input)) {
-                input = input.toUpperCase();
+        function refresh() {
+            holder.codeToCountry = getCountryList(currentLocale);
+
+
+            holder.countryToCode = {};
+            holder.countryCodes = [];
+
+
+            for (var key in holder.codeToCountry) {
+                holder.countryToCode[holder.codeToCountry[key]] = key;
+                holder.countryCodes.push(key);
             }
-            return angular.isDefined(this.codeToCountry[input]);
-        };
 
-        holder.getCountryCode = function (countryName, manipulator) {
-            var countryCode = this.countryToCode[countryName.toUpperCase()];
-            manipulator = manipulator ? manipulator : 'toUpperCase';
-
-            return countryCode && countryCode[manipulator]();
-        };
-
-        holder.getCountryName = function (countryCode, manipulator) {
-            manipulator = manipulator ? manipulator : 'toString';
-
-            return this.codeToCountry[countryCode] && this.codeToCountry[countryCode][manipulator]();
-        };
-
-        holder.getCountryNames = function (countryCodes, manipulator) {
-            manipulator = manipulator ? manipulator : 'toString';
-
-            var countries = {};
-            angular.forEach(countryCodes, function (key) {
-                if (holder.isCountryCode(key)) {
-                    countries[key] = holder.getCountryName(key, manipulator);
+            holder.isCountryCode = function (input) {
+                if (angular.isString(input)) {
+                    input = input.toUpperCase();
                 }
-            });
-            return countries;
-        };
+                return angular.isDefined(this.codeToCountry[input]);
+            };
 
+            holder.getCountryCode = function (countryName, manipulator) {
+                var countryCode = this.countryToCode[countryName.toUpperCase()];
+                manipulator = manipulator ? manipulator : 'toUpperCase';
 
+                return countryCode && countryCode[manipulator]();
+            };
 
+            holder.getCountryName = function (countryCode, manipulator) {
+                manipulator = manipulator ? manipulator : 'toString';
 
+                return this.codeToCountry[countryCode] && this.codeToCountry[countryCode][manipulator]();
+            };
+
+            holder.getCountryNames = function (countryCodes, manipulator) {
+                manipulator = manipulator ? manipulator : 'toString';
+
+                var countries = {};
+                angular.forEach(countryCodes, function (key) {
+                    if (holder.isCountryCode(key)) {
+                        countries[key] = holder.getCountryName(key, manipulator);
+                    }
+                });
+                return countries;
+            };
+
+        }
+
+        var holder = {};
+
+        holder.setLocale = setLocale;
+        holder.getCountryList = getCountryList;
+
+        holder.setLocale($locale.id);// start with default locale;
 
         return holder;
     })
