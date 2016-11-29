@@ -1,0 +1,402 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-bump',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.0
+4 verbose install initial load of /Users/simonfakir/dev/github/iso-3166-country-codes-angular/package.json
+5 warn package.json iso-3166-country-codes-translations@1.5.1 license should be a valid SPDX license expression
+6 verbose installManyTop reading scoped package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt/package.json
+7 verbose installManyTop reading scoped package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/package.json
+8 verbose installManyTop reading scoped package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-contrib-jshint/package.json
+9 verbose installManyTop reading scoped package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-contrib-uglify/package.json
+10 info package.json grunt@0.4.5 No license field.
+11 info package.json grunt-contrib-jshint@0.7.2 No license field.
+12 info package.json grunt-contrib-uglify@0.2.7 No license field.
+13 verbose readDependencies loading dependencies from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/package.json
+14 verbose install grunt-bump is installed as 0.8.0
+15 silly cache add args [ 'grunt-bump', null ]
+16 verbose cache add spec grunt-bump
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: 'grunt-bump',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'grunt-bump',
+17 silly cache add   rawSpec: '',
+17 silly cache add   spec: 'latest',
+17 silly cache add   type: 'tag' }
+18 silly addNamed grunt-bump@latest
+19 verbose addNamed "latest" is being treated as a dist-tag for grunt-bump
+20 info addNameTag [ 'grunt-bump', 'latest' ]
+21 silly mapToRegistry name grunt-bump
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry data Result {
+24 silly mapToRegistry   raw: 'grunt-bump',
+24 silly mapToRegistry   scope: null,
+24 silly mapToRegistry   name: 'grunt-bump',
+24 silly mapToRegistry   rawSpec: '',
+24 silly mapToRegistry   spec: 'latest',
+24 silly mapToRegistry   type: 'tag' }
+25 silly mapToRegistry uri https://registry.npmjs.org/grunt-bump
+26 verbose addNameTag registry:https://registry.npmjs.org/grunt-bump not in flight; fetching
+27 verbose get https://registry.npmjs.org/grunt-bump not expired, no request
+28 silly addNameTag next cb for grunt-bump with tag latest
+29 silly addNamed grunt-bump@0.8.0
+30 verbose addNamed "0.8.0" is a plain semver version for grunt-bump
+31 silly cache afterAdd grunt-bump@0.8.0
+32 verbose afterAdd /Users/simonfakir/.npm/grunt-bump/0.8.0/package/package.json not in flight; writing
+33 verbose correctMkdir /Users/simonfakir/.npm correctMkdir not in flight; initializing
+34 verbose afterAdd /Users/simonfakir/.npm/grunt-bump/0.8.0/package/package.json written
+35 silly install resolved [ { name: 'grunt-bump',
+35 silly install resolved     description: 'Bump package version',
+35 silly install resolved     version: '0.8.0',
+35 silly install resolved     homepage: 'https://github.com/vojtajina/grunt-bump',
+35 silly install resolved     author: { name: 'Vojta Jína', email: 'vojta.jina@gmail.com' },
+35 silly install resolved     contributors:
+35 silly install resolved      [ [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object] ],
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git://github.com/vojtajina/grunt-bump.git' },
+35 silly install resolved     bugs: { url: 'https://github.com/vojtajina/grunt-bump/issues' },
+35 silly install resolved     main: 'tasks/bump.js',
+35 silly install resolved     engines: { node: '>= 0.8.0' },
+35 silly install resolved     scripts:
+35 silly install resolved      { test: 'grunt nodeunit',
+35 silly install resolved        'release-major': 'grunt release:major',
+35 silly install resolved        'release-minor': 'grunt release:minor',
+35 silly install resolved        'release-patch': 'grunt release:patch' },
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     dependencies: { semver: '^5.1.0' },
+35 silly install resolved     peerDependencies: { grunt: '>=1.0.1' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { grunt: '^1.0.1',
+35 silly install resolved        'grunt-auto-release': '^0.0.6',
+35 silly install resolved        'grunt-contrib-clean': '^1.0.0',
+35 silly install resolved        'grunt-contrib-jshint': '^1.0.0',
+35 silly install resolved        'grunt-contrib-nodeunit': '^1.0.0',
+35 silly install resolved        'grunt-conventional-changelog': '^1.2.0',
+35 silly install resolved        'grunt-npm': '^0.0.2',
+35 silly install resolved        'load-grunt-tasks': '^3.5.0' },
+35 silly install resolved     keywords: [ 'gruntplugin' ],
+35 silly install resolved     gitHead: '54ed28e9a6574db213d609ef3ad58ca2437b71d4',
+35 silly install resolved     _id: 'grunt-bump@0.8.0',
+35 silly install resolved     _shasum: 'd3ffe0cf3cf0b38e09607b78538f42a531eafe55',
+35 silly install resolved     _from: 'grunt-bump@latest',
+35 silly install resolved     _npmVersion: '3.8.6',
+35 silly install resolved     _nodeVersion: '5.10.1',
+35 silly install resolved     _npmUser: { name: 'eddiemonge', email: 'eddie+npm@eddiemonge.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'd3ffe0cf3cf0b38e09607b78538f42a531eafe55',
+35 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-bump/-/grunt-bump-0.8.0.tgz' },
+35 silly install resolved     maintainers: [ [Object], [Object] ],
+35 silly install resolved     _npmOperationalInternal:
+35 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+35 silly install resolved        tmp: 'tmp/grunt-bump-0.8.0.tgz_1461092137500_0.7811664913315326' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-bump/-/grunt-bump-0.8.0.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install grunt-bump@0.8.0 into /Users/simonfakir/dev/github/iso-3166-country-codes-angular
+37 info installOne grunt-bump@0.8.0
+38 verbose installOne of grunt-bump to /Users/simonfakir/dev/github/iso-3166-country-codes-angular not in flight; installing
+39 verbose correctMkdir /Users/simonfakir/.npm/_locks correctMkdir not in flight; initializing
+40 verbose lock using /Users/simonfakir/.npm/_locks/grunt-bump-3ac321773b1ff31b.lock for /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+41 silly install write writing grunt-bump 0.8.0 to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+42 verbose unbuild node_modules/grunt-bump
+43 info preuninstall grunt-bump@0.8.0
+44 info uninstall grunt-bump@0.8.0
+45 verbose unbuild rmStuff grunt-bump@0.8.0 from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules
+46 info postuninstall grunt-bump@0.8.0
+47 silly gentlyRm /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump is being purged from base /Users/simonfakir/dev/github/iso-3166-country-codes-angular
+48 verbose gentlyRm don't care about contents; nuking /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+49 silly vacuum-fs purging /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+50 silly vacuum-fs quitting because other entries in /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules
+51 verbose tar unpack /Users/simonfakir/.npm/grunt-bump/0.8.0/package.tgz
+52 verbose tar unpacking to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+53 silly gentlyRm /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump is being purged
+54 verbose gentlyRm don't care about contents; nuking /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry .npmignore
+58 silly gunzTarPerm extractEntry README.md
+59 silly gunzTarPerm extractEntry LICENSE
+60 silly gunzTarPerm extractEntry CHANGELOG.md
+61 silly gunzTarPerm extractEntry CONTRIBUTING.md
+62 silly gunzTarPerm extractEntry tasks/bump.js
+63 verbose write writing to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/package.json
+64 info preinstall grunt-bump@0.8.0
+65 verbose readDependencies loading dependencies from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/package.json
+66 silly prepareForInstallMany adding semver@^5.1.0 from grunt-bump dependencies
+67 silly prepareForInstallMany adding grunt@>=1.0.1 from grunt-bump peerDependencies
+68 warn peerDependencies The peer dependency grunt@>=1.0.1 included from grunt-bump will no
+69 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+70 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+71 verbose readDependencies loading dependencies from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/package.json
+72 silly cache add args [ 'semver@^5.1.0', null ]
+73 verbose cache add spec semver@^5.1.0
+74 silly cache add parsed spec Result {
+74 silly cache add   raw: 'semver@^5.1.0',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'semver',
+74 silly cache add   rawSpec: '^5.1.0',
+74 silly cache add   spec: '>=5.1.0 <6.0.0',
+74 silly cache add   type: 'range' }
+75 silly addNamed semver@>=5.1.0 <6.0.0
+76 verbose addNamed ">=5.1.0 <6.0.0" is a valid semver range for semver
+77 silly addNameRange { name: 'semver', range: '>=5.1.0 <6.0.0', hasData: false }
+78 silly mapToRegistry name semver
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry data Result {
+81 silly mapToRegistry   raw: 'semver',
+81 silly mapToRegistry   scope: null,
+81 silly mapToRegistry   name: 'semver',
+81 silly mapToRegistry   rawSpec: '',
+81 silly mapToRegistry   spec: 'latest',
+81 silly mapToRegistry   type: 'tag' }
+82 silly mapToRegistry uri https://registry.npmjs.org/semver
+83 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+84 verbose request uri https://registry.npmjs.org/semver
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 10:07:28 PM
+87 verbose request using bearer token for auth
+88 verbose request id e06fab2a5f056619
+89 verbose etag W/"5829227a-11a3e"
+90 verbose lastModified Mon, 14 Nov 2016 02:33:30 GMT
+91 http request GET https://registry.npmjs.org/semver
+92 http 304 https://registry.npmjs.org/semver
+93 verbose headers { server: 'nginx/1.10.1',
+93 verbose headers   'last-modified': 'Mon, 14 Nov 2016 02:33:30 GMT',
+93 verbose headers   etag: '"5829227a-11a3e"',
+93 verbose headers   'cache-control': 'max-age=300',
+93 verbose headers   'accept-ranges': 'bytes',
+93 verbose headers   date: 'Tue, 29 Nov 2016 21:07:28 GMT',
+93 verbose headers   via: '1.1 varnish',
+93 verbose headers   connection: 'keep-alive',
+93 verbose headers   'x-served-by': 'cache-fra1228-FRA',
+93 verbose headers   'x-cache': 'MISS',
+93 verbose headers   'x-cache-hits': '0',
+93 verbose headers   'x-timer': 'S1480453648.435356,VS0,VE0',
+93 verbose headers   vary: 'Accept-Encoding' }
+94 silly get cb [ 304,
+94 silly get   { server: 'nginx/1.10.1',
+94 silly get     'last-modified': 'Mon, 14 Nov 2016 02:33:30 GMT',
+94 silly get     etag: '"5829227a-11a3e"',
+94 silly get     'cache-control': 'max-age=300',
+94 silly get     'accept-ranges': 'bytes',
+94 silly get     date: 'Tue, 29 Nov 2016 21:07:28 GMT',
+94 silly get     via: '1.1 varnish',
+94 silly get     connection: 'keep-alive',
+94 silly get     'x-served-by': 'cache-fra1228-FRA',
+94 silly get     'x-cache': 'MISS',
+94 silly get     'x-cache-hits': '0',
+94 silly get     'x-timer': 'S1480453648.435356,VS0,VE0',
+94 silly get     vary: 'Accept-Encoding' } ]
+95 verbose etag https://registry.npmjs.org/semver from cache
+96 verbose get saving semver to /Users/simonfakir/.npm/registry.npmjs.org/semver/.cache.json
+97 verbose correctMkdir /Users/simonfakir/.npm correctMkdir not in flight; initializing
+98 silly addNameRange number 2 { name: 'semver', range: '>=5.1.0 <6.0.0', hasData: true }
+99 silly addNameRange versions [ 'semver',
+99 silly addNameRange   [ '1.0.0',
+99 silly addNameRange     '1.0.1',
+99 silly addNameRange     '1.0.2',
+99 silly addNameRange     '1.0.3',
+99 silly addNameRange     '1.0.4',
+99 silly addNameRange     '1.0.5',
+99 silly addNameRange     '1.0.6',
+99 silly addNameRange     '1.0.7',
+99 silly addNameRange     '1.0.8',
+99 silly addNameRange     '1.0.9',
+99 silly addNameRange     '1.0.10',
+99 silly addNameRange     '1.0.11',
+99 silly addNameRange     '1.0.12',
+99 silly addNameRange     '1.0.13',
+99 silly addNameRange     '1.0.14',
+99 silly addNameRange     '1.1.0',
+99 silly addNameRange     '1.1.1',
+99 silly addNameRange     '1.1.2',
+99 silly addNameRange     '1.1.3',
+99 silly addNameRange     '1.1.4',
+99 silly addNameRange     '2.0.0-alpha',
+99 silly addNameRange     '2.0.0-beta',
+99 silly addNameRange     '2.0.1',
+99 silly addNameRange     '2.0.2',
+99 silly addNameRange     '2.0.3',
+99 silly addNameRange     '2.0.4',
+99 silly addNameRange     '2.0.5',
+99 silly addNameRange     '2.0.6',
+99 silly addNameRange     '2.0.7',
+99 silly addNameRange     '2.0.8',
+99 silly addNameRange     '2.0.9',
+99 silly addNameRange     '2.0.10',
+99 silly addNameRange     '2.0.11',
+99 silly addNameRange     '2.1.0',
+99 silly addNameRange     '2.2.0',
+99 silly addNameRange     '2.2.1',
+99 silly addNameRange     '2.3.0',
+99 silly addNameRange     '2.3.1',
+99 silly addNameRange     '2.3.2',
+99 silly addNameRange     '3.0.0',
+99 silly addNameRange     '3.0.1',
+99 silly addNameRange     '4.0.0',
+99 silly addNameRange     '4.0.2',
+99 silly addNameRange     '4.0.3',
+99 silly addNameRange     '4.1.0',
+99 silly addNameRange     '4.1.1',
+99 silly addNameRange     '4.2.0',
+99 silly addNameRange     '4.2.1',
+99 silly addNameRange     '4.2.2',
+99 silly addNameRange     '4.3.0',
+99 silly addNameRange     '4.3.1',
+99 silly addNameRange     '4.3.2',
+99 silly addNameRange     '4.3.3',
+99 silly addNameRange     '4.3.4',
+99 silly addNameRange     '4.3.5',
+99 silly addNameRange     '4.3.6',
+99 silly addNameRange     '5.0.0',
+99 silly addNameRange     '5.0.1',
+99 silly addNameRange     '5.0.2',
+99 silly addNameRange     '5.0.3',
+99 silly addNameRange     '5.1.0',
+99 silly addNameRange     '5.1.1',
+99 silly addNameRange     '5.2.0',
+99 silly addNameRange     '5.3.0' ] ]
+100 silly addNamed semver@5.3.0
+101 verbose addNamed "5.3.0" is a plain semver version for semver
+102 silly cache afterAdd semver@5.3.0
+103 verbose afterAdd /Users/simonfakir/.npm/semver/5.3.0/package/package.json not in flight; writing
+104 verbose correctMkdir /Users/simonfakir/.npm correctMkdir not in flight; initializing
+105 verbose afterAdd /Users/simonfakir/.npm/semver/5.3.0/package/package.json written
+106 silly install resolved [ { name: 'semver',
+106 silly install resolved     version: '5.3.0',
+106 silly install resolved     description: 'The semantic version parser used by npm.',
+106 silly install resolved     main: 'semver.js',
+106 silly install resolved     scripts: { test: 'tap test/*.js' },
+106 silly install resolved     devDependencies: { tap: '^2.0.0' },
+106 silly install resolved     license: 'ISC',
+106 silly install resolved     repository:
+106 silly install resolved      { type: 'git',
+106 silly install resolved        url: 'git+https://github.com/npm/node-semver.git' },
+106 silly install resolved     bin: { semver: './bin/semver' },
+106 silly install resolved     files: [ 'bin', 'range.bnf', 'semver.js' ],
+106 silly install resolved     readme: 'semver(1) -- The semantic versioner for npm\n===========================================\n\n## Usage\n\n    $ npm install semver\n    $ node\n    var semver = require(\'semver\')\n\n    semver.valid(\'1.2.3\') // \'1.2.3\'\n    semver.valid(\'a.b.c\') // null\n    semver.clean(\'  =v1.2.3   \') // \'1.2.3\'\n    semver.satisfies(\'1.2.3\', \'1.x || >=2.5.0 || 5.0.0 - 7.2.3\') // true\n    semver.gt(\'1.2.3\', \'9.8.7\') // false\n    semver.lt(\'1.2.3\', \'9.8.7\') // true\n\nAs a command-line utility:\n\n    $ semver -h\n\n    SemVer 5.1.0\n\n    A JavaScript implementation of the http://semver.org/ specification\n    Copyright Isaac Z. Schlueter\n\n    Usage: semver [options] <version> [<version> [...]]\n    Prints valid versions sorted by SemVer precedence\n\n    Options:\n    -r --range <range>\n            Print versions that match the specified range.\n\n    -i --increment [<level>]\n            Increment a version by the specified level.  Level can\n            be one of: major, minor, patch, premajor, preminor,\n            prepatch, or prerelease.  Default level is \'patch\'.\n            Only one version may be specified.\n\n    --preid <identifier>\n            Identifier to be used to prefix premajor, preminor,\n            prepatch or prerelease version increments.\n\n    -l --loose\n            Interpret versions and ranges loosely\n\n    Program exits successfully if any valid version satisfies\n    all supplied ranges, and prints all satisfying versions.\n\n    If no satisfying versions are found, then exits failure.\n\n    Versions are printed in ascending order, so supplying\n    multiple versions to the utility will just sort them.\n\n## Versions\n\nA "version" is described by the `v2.0.0` specification found at\n<http://semver.org/>.\n\nA leading `"="` or `"v"` character is stripped off and ignored.\n\n## Ranges\n\nA `version range` is a set of `comparators` which specify versions\nthat satisfy the range.\n\nA `comparator` is composed of an `operator` and a `version`.  The set\nof primitive `operators` is:\n\n* `<` Less than\n* `<=` Less than or equal to\n* `>` Greater than\n* `>=` Greater than or equal to\n* `=` Equal.  If no operator is specified, then equality is assumed,\n  so this operator is optional, but MAY be included.\n\nFor example, the comparator `>=1.2.7` would match the versions\n`1.2.7`, `1.2.8`, `2.5.3`, and `1.3.9`, but not the versions `1.2.6`\nor `1.1.0`.\n\nComparators can be joined by whitespace to form a `comparator set`,\nwhich is satisfied by the **intersection** of all of the comparators\nit includes.\n\nA range is composed of one or more comparator sets, joined by `||`.  A\nversion matches a range if and only if every comparator in at least\none of the `||`-separated comparator sets is satisfied by the version.\n\nFor example, the range `>=1.2.7 <1.3.0` would match the versions\n`1.2.7`, `1.2.8`, and `1.2.99`, but not the versions `1.2.6`, `1.3.0`,\nor `1.1.0`.\n\nThe range `1.2.7 || >=1.2.9 <2.0.0` would match the versions `1.2.7`,\n`1.2.9`, and `1.4.6`, but not the versions `1.2.8` or `2.0.0`.\n\n### Prerelease Tags\n\nIf a version has a prerelease tag (for example, `1.2.3-alpha.3`) then\nit will only be allowed to satisfy comparator sets if at least one\ncomparator with the same `[major, minor, patch]` tuple also has a\nprerelease tag.\n\nFor example, the range `>1.2.3-alpha.3` would be allowed to match the\nversion `1.2.3-alpha.7`, but it would *not* be satisfied by\n`3.4.5-alpha.9`, even though `3.4.5-alpha.9` is technically "greater\nthan" `1.2.3-alpha.3` according to the SemVer sort rules.  The version\nrange only accepts prerelease tags on the `1.2.3` version.  The\nversion `3.4.5` *would* satisfy the range, because it does not have a\nprerelease flag, and `3.4.5` is greater than `1.2.3-alpha.7`.\n\nThe purpose for this behavior is twofold.  First, prerelease versions\nfrequently are updated very quickly, and contain many breaking changes\nthat are (by the author\'s design) not yet fit for public consumption.\nTherefore, by default, they are excluded from range matching\nsemantics.\n\nSecond, a user who has opted into using a prerelease version has\nclearly indicated the intent to use *that specific* set of\nalpha/beta/rc versions.  By including a prerelease tag in the range,\nthe user is indicating that they are aware of the risk.  However, it\nis still not appropriate to assume that they have opted into taking a\nsimilar risk on the *next* set of prerelease versions.\n\n#### Prerelease Identifiers\n\nThe method `.inc` takes an additional `identifier` string argument that\nwill append the value of the string as a prerelease identifier:\n\n```javascript\n> semver.inc(\'1.2.3\', \'prerelease\', \'beta\')\n\'1.2.4-beta.0\'\n```\n\ncommand-line example:\n\n```shell\n$ semver 1.2.3 -i prerelease --preid beta\n1.2.4-beta.0\n```\n\nWhich then can be used to increment further:\n\n```shell\n$ semver 1.2.4-beta.0 -i prerelease\n1.2.4-beta.1\n```\n\n### Advanced Range Syntax\n\nAdvanced range syntax desugars to primitive comparators in\ndeterministic ways.\n\nAdvanced ranges may be combined in the same way as primitive\ncomparators using white space or `||`.\n\n#### Hyphen Ranges `X.Y.Z - A.B.C`\n\nSpecifies an inclusive set.\n\n* `1.2.3 - 2.3.4` := `>=1.2.3 <=2.3.4`\n\nIf a partial version is provided as the first version in the inclusive\nrange, then the missing pieces are replaced with zeroes.\n\n* `1.2 - 2.3.4` := `>=1.2.0 <=2.3.4`\n\nIf a partial version is provided as the second version in the\ninclusive range, then all versions that start with the supplied parts\nof the tuple are accepted, but nothing that would be greater than the\nprovided tuple parts.\n\n* `1.2.3 - 2.3` := `>=1.2.3 <2.4.0`\n* `1.2.3 - 2` := `>=1.2.3 <3.0.0`\n\n#### X-Ranges `1.2.x` `1.X` `1.2.*` `*`\n\nAny of `X`, `x`, or `*` may be used to "stand in" for one of the\nnumeric values in the `[major, minor, patch]` tuple.\n\n* `*` := `>=0.0.0` (Any version satisfies)\n* `1.x` := `>=1.0.0 <2.0.0` (Matching major version)\n* `1.2.x` := `>=1.2.0 <1.3.0` (Matching major and minor versions)\n\nA partial version range is treated as an X-Range, so the special\ncharacter is in fact optional.\n\n* `""` (empty string) := `*` := `>=0.0.0`\n* `1` := `1.x.x` := `>=1.0.0 <2.0.0`\n* `1.2` := `1.2.x` := `>=1.2.0 <1.3.0`\n\n#### Tilde Ranges `~1.2.3` `~1.2` `~1`\n\nAllows patch-level changes if a minor version is specified on the\ncomparator.  Allows minor-level changes if not.\n\n* `~1.2.3` := `>=1.2.3 <1.(2+1).0` := `>=1.2.3 <1.3.0`\n* `~1.2` := `>=1.2.0 <1.(2+1).0` := `>=1.2.0 <1.3.0` (Same as `1.2.x`)\n* `~1` := `>=1.0.0 <(1+1).0.0` := `>=1.0.0 <2.0.0` (Same as `1.x`)\n* `~0.2.3` := `>=0.2.3 <0.(2+1).0` := `>=0.2.3 <0.3.0`\n* `~0.2` := `>=0.2.0 <0.(2+1).0` := `>=0.2.0 <0.3.0` (Same as `0.2.x`)\n* `~0` := `>=0.0.0 <(0+1).0.0` := `>=0.0.0 <1.0.0` (Same as `0.x`)\n* `~1.2.3-beta.2` := `>=1.2.3-beta.2 <1.3.0` Note that prereleases in\n  the `1.2.3` version will be allowed, if they are greater than or\n  equal to `beta.2`.  So, `1.2.3-beta.4` would be allowed, but\n  `1.2.4-beta.2` would not, because it is a prerelease of a\n  different `[major, minor, patch]` tuple.\n\n#### Caret Ranges `^1.2.3` `^0.2.5` `^0.0.4`\n\nAllows changes that do not modify the left-most non-zero digit in the\n`[major, minor, patch]` tuple.  In other words, this allows patch and\nminor updates for versions `1.0.0` and above, patch updates for\nversions `0.X >=0.1.0`, and *no* updates for versions `0.0.X`.\n\nMany authors treat a `0.x` version as if the `x` were the major\n"breaking-change" indicator.\n\nCaret ranges are ideal when an author may make breaking changes\nbetween `0.2.4` and `0.3.0` releases, which is a common practice.\nHowever, it presumes that there will *not* be breaking changes between\n`0.2.4` and `0.2.5`.  It allows for changes that are presumed to be\nadditive (but non-breaking), according to commonly observed practices.\n\n* `^1.2.3` := `>=1.2.3 <2.0.0`\n* `^0.2.3` := `>=0.2.3 <0.3.0`\n* `^0.0.3` := `>=0.0.3 <0.0.4`\n* `^1.2.3-beta.2` := `>=1.2.3-beta.2 <2.0.0` Note that prereleases in\n  the `1.2.3` version will be allowed, if they are greater than or\n  equal to `beta.2`.  So, `1.2.3-beta.4` would be allowed, but\n  `1.2.4-beta.2` would not, because it is a prerelease of a\n  different `[major, minor, patch]` tuple.\n* `^0.0.3-beta` := `>=0.0.3-beta <0.0.4`  Note that prereleases in the\n  `0.0.3` version *only* will be allowed, if they are greater than or\n  equal to `beta`.  So, `0.0.3-pr.2` would be allowed.\n\nWhen parsing caret ranges, a missing `patch` value desugars to the\nnumber `0`, but will allow flexibility within that value, even if the\nmajor and minor versions are both `0`.\n\n* `^1.2.x` := `>=1.2.0 <2.0.0`\n* `^0.0.x` := `>=0.0.0 <0.1.0`\n* `^0.0` := `>=0.0.0 <0.1.0`\n\nA missing `minor` and `patch` values will desugar to zero, but also\nallow flexibility within those values, even if the major version is\nzero.\n\n* `^1.x` := `>=1.0.0 <2.0.0`\n* `^0.x` := `>=0.0.0 <1.0.0`\n\n### Range Grammar\n\nPutting all this together, here is a Backus-Naur grammar for ranges,\nfor the benefit of parser authors:\n\n```bnf\nrange-set  ::= range ( logical-or range ) *\nlogical-or ::= ( \' \' ) * \'||\' ( \' \' ) *\nrange      ::= hyphen | simple ( \' \' simple ) * | \'\'\nhyphen     ::= partial \' - \' partial\nsimple     ::= primitive | partial | tilde | caret\nprimitive  ::= ( \'<\' | \'>\' | \'>=\' | \'<=\' | \'=\' | ) partial\npartial    ::= xr ( \'.\' xr ( \'.\' xr qualifier ? )? )?\nxr         ::= \'x\' | \'X\' | \'*\' | nr\nnr         ::= \'0\' | [\'1\'-\'9\'] ( [\'0\'-\'9\'] ) *\ntilde      ::= \'~\' partial\ncaret      ::= \'^\' partial\nqualifier  ::= ( \'-\' pre )? ( \'+\' build )?\npre        ::= parts\nbuild      ::= parts\nparts      ::= part ( \'.\' part ) *\npart       ::= nr | [-0-9A-Za-z]+\n```\n\n## Functions\n\nAll methods and classes take a final `loose` boolean argument that, if\ntrue, will be more forgiving about not-quite-valid semver strings.\nThe resulting output will always be 100% strict, of course.\n\nStrict-mode Comparators and Ranges will be strict about the SemVer\nstrings that they parse.\n\n* `valid(v)`: Return the parsed version, or null if it\'s not valid.\n* `inc(v, release)`: Return the version incremented by the release\n  type (`major`,   `premajor`, `minor`, `preminor`, `patch`,\n  `prepatch`, or `prerelease`), or null if it\'s not valid\n  * `premajor` in one call will bump the version up to the next major\n    version and down to a prerelease of that major version.\n    `preminor`, and `prepatch` work the same way.\n  * If called from a non-prerelease version, the `prerelease` will work the\n    same as `prepatch`. It increments the patch version, then makes a\n    prerelease. If the input version is already a prerelease it simply\n    increments it.\n* `prerelease(v)`: Returns an array of prerelease components, or null\n  if none exist. Example: `prerelease(\'1.2.3-alpha.1\') -> [\'alpha\', 1]`\n* `major(v)`: Return the major version number.\n* `minor(v)`: Return the minor version number.\n* `patch(v)`: Return the patch version number.\n\n### Comparison\n\n* `gt(v1, v2)`: `v1 > v2`\n* `gte(v1, v2)`: `v1 >= v2`\n* `lt(v1, v2)`: `v1 < v2`\n* `lte(v1, v2)`: `v1 <= v2`\n* `eq(v1, v2)`: `v1 == v2` This is true if they\'re logically equivalent,\n  even if they\'re not the exact same string.  You already know how to\n  compare strings.\n* `neq(v1, v2)`: `v1 != v2` The opposite of `eq`.\n* `cmp(v1, comparator, v2)`: Pass in a comparison string, and it\'ll call\n  the corresponding function above.  `"==="` and `"!=="` do simple\n  string comparison, but are included for completeness.  Throws if an\n  invalid comparison string is provided.\n* `compare(v1, v2)`: Return `0` if `v1 == v2`, or `1` if `v1` is greater, or `-1` if\n  `v2` is greater.  Sorts in ascending order if passed to `Array.sort()`.\n* `rcompare(v1, v2)`: The reverse of compare.  Sorts an array of versions\n  in descending order when passed to `Array.sort()`.\n* `diff(v1, v2)`: Returns difference between two versions by the release type\n  (`major`, `premajor`, `minor`, `preminor`, `patch`, `prepatch`, or `prerelease`),\n  or null if the versions are the same.\n\n\n### Ranges\n\n* `validRange(range)`: Return the valid range or null if it\'s not valid\n* `satisfies(version, range)`: Return true if the version satisfies the\n  range.\n* `maxSatisfying(versions, range)`: Return the highest version in the list\n  that satisfies the range, or `null` if none of them do.\n* `minSatisfying(versions, range)`: Return the lowest version in the list\n  that satisfies the range, or `null` if none of them do.\n* `gtr(version, range)`: Return `true` if version is greater than all the\n  versions possible in the range.\n* `ltr(version, range)`: Return `true` if version is less than all the\n  versions possible in the range.\n* `outside(version, range, hilo)`: Return true if the version is outside\n  the bounds of the range in either the high or low direction.  The\n  `hilo` argument must be either the string `\'>\'` or `\'<\'`.  (This is\n  the function called by `gtr` and `ltr`.)\n\nNote that, since ranges may be non-contiguous, a version might not be\ngreater than a range, less than a range, *or* satisfy a range!  For\nexample, the range `1.2 <1.2.9 || >2.0.0` would have a hole from `1.2.9`\nuntil `2.0.0`, so the version `1.2.10` would not be greater than the\nrange (because `2.0.1` satisfies, which is higher), nor less than the\nrange (since `1.2.8` satisfies, which is lower), and it also does not\nsatisfy the range.\n\nIf you want to know if a version satisfies or does not satisfy a\nrange, use the `satisfies(version, range)` function.\n',
+106 silly install resolved     readmeFilename: 'README.md',
+106 silly install resolved     bugs: { url: 'https://github.com/npm/node-semver/issues' },
+106 silly install resolved     homepage: 'https://github.com/npm/node-semver#readme',
+106 silly install resolved     _id: 'semver@5.3.0',
+106 silly install resolved     _shasum: '9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f',
+106 silly install resolved     _resolved: 'https://registry.npmjs.org/semver/-/semver-5.3.0.tgz',
+106 silly install resolved     _from: 'semver@>=5.1.0 <6.0.0' } ]
+107 info install semver@5.3.0 into /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+108 info installOne semver@5.3.0
+109 verbose installOne of semver to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump not in flight; installing
+110 verbose correctMkdir /Users/simonfakir/.npm/_locks correctMkdir not in flight; initializing
+111 verbose lock using /Users/simonfakir/.npm/_locks/semver-d66b5faa8fb40509.lock for /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+112 silly install write writing semver 5.3.0 to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+113 verbose unbuild node_modules/grunt-bump/node_modules/semver
+114 silly gentlyRm /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver is being purged from base /Users/simonfakir/dev/github/iso-3166-country-codes-angular
+115 verbose gentlyRm don't care about contents; nuking /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+116 verbose tar unpack /Users/simonfakir/.npm/semver/5.3.0/package.tgz
+117 verbose tar unpacking to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+118 silly gentlyRm /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver is being purged
+119 verbose gentlyRm don't care about contents; nuking /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+120 silly gunzTarPerm modes [ '755', '644' ]
+121 silly gunzTarPerm extractEntry package.json
+122 silly gunzTarPerm extractEntry README.md
+123 silly gunzTarPerm extractEntry LICENSE
+124 silly gunzTarPerm extractEntry semver.js
+125 silly gunzTarPerm extractEntry bin/semver
+126 silly gunzTarPerm extractEntry range.bnf
+127 verbose write writing to /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver/package.json
+128 info preinstall semver@5.3.0
+129 verbose readDependencies loading dependencies from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver/package.json
+130 verbose readDependencies loading dependencies from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver/package.json
+131 silly install resolved []
+132 verbose about to build /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+133 info build /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+134 info linkStuff semver@5.3.0
+135 silly linkStuff semver@5.3.0 has /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules as its parent node_modules
+136 verbose linkBins semver@5.3.0
+137 verbose link bins [ { semver: './bin/semver' },
+137 verbose link bins   '/Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/.bin',
+137 verbose link bins   false ]
+138 verbose linkMans semver@5.3.0
+139 verbose rebuildBundles semver@5.3.0
+140 silly gentlyRm /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/.bin/semver is being purged
+141 verbose gentlyRm don't care about contents; nuking /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/.bin/semver
+142 info install semver@5.3.0
+143 info postinstall semver@5.3.0
+144 verbose unlock done using /Users/simonfakir/.npm/_locks/semver-d66b5faa8fb40509.lock for /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/node_modules/semver
+145 verbose about to build /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+146 info build /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+147 info linkStuff grunt-bump@0.8.0
+148 silly linkStuff grunt-bump@0.8.0 has /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules as its parent node_modules
+149 verbose linkBins grunt-bump@0.8.0
+150 verbose linkMans grunt-bump@0.8.0
+151 verbose rebuildBundles grunt-bump@0.8.0
+152 verbose rebuildBundles [ '.bin', 'semver' ]
+153 info install grunt-bump@0.8.0
+154 info postinstall grunt-bump@0.8.0
+155 verbose readDependencies loading dependencies from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/package.json
+156 verbose targetResolver reading package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt/package.json
+157 verbose targetResolver reading package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump/package.json
+158 verbose targetResolver reading package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-contrib-jshint/package.json
+159 verbose targetResolver reading package data from /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-contrib-uglify/package.json
+160 verbose already installed skipping grunt@>=1.0.1 /Users/simonfakir/dev/github/iso-3166-country-codes-angular
+161 silly install resolved []
+162 verbose unlock done using /Users/simonfakir/.npm/_locks/grunt-bump-3ac321773b1ff31b.lock for /Users/simonfakir/dev/github/iso-3166-country-codes-angular/node_modules/grunt-bump
+163 verbose validateInstall loading /Users/simonfakir/dev/github/iso-3166-country-codes-angular/package.json for validation
+164 verbose stack Error: The package grunt@0.4.5 does not satisfy its siblings' peerDependencies requirements!
+164 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+164 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+164 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+164 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+164 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+165 verbose cwd /Users/simonfakir/dev/github/iso-3166-country-codes-angular
+166 error Darwin 16.0.0
+167 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-bump" "--save-dev"
+168 error node v4.6.0
+169 error npm  v2.15.9
+170 error code EPEERINVALID
+171 error peerinvalid The package grunt@0.4.5 does not satisfy its siblings' peerDependencies requirements!
+171 error peerinvalid Peer grunt-bump@0.8.0 wants grunt@>=1.0.1
+171 error peerinvalid Peer grunt-contrib-uglify@0.2.7 wants grunt@~0.4.0
+171 error peerinvalid Peer grunt-contrib-jshint@0.7.2 wants grunt@~0.4.0
+172 verbose exit [ 1, true ]

@@ -1,6 +1,6 @@
 {
   "name": "iso-3166-country-codes-translations",
-  "version": "1.5.1",
+  "version": "1.5.4",
   "description": "An AngularJS module to work with Country Codes and in different locales",
   "repository": {
     "type": "git",
