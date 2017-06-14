@@ -22,7 +22,7 @@ angular.module('iso-3166-country-codes', [])
         }
 
         function getCountryList(locale) {
-		locale = locale.toUpperCase();
+	    locale = locale.toUpperCase();
 
             switch (locale) {
                 //Additional country lists can be found here: https://raw.githubusercontent.com/umpirsky/country-list/
@@ -283,7 +283,7 @@ angular.module('iso-3166-country-codes', [])
                         'CY': 'Zypern'
                     };
                 default:
-                case 'EN':
+                case 'en':
                     return {
                         'AF': 'Afghanistan',
                         'AX': '\u00c5land Islands',

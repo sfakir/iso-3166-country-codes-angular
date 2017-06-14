@@ -123,23 +123,9 @@ If you want users to enter country codes, you can validate it like so (it fits i
 </form>
 ```
 
-## Issues, Feature request
+## Release
 
-You can use [Github's issues](https://github.com/rsertelon/iso-3166-country-codes-angular/issues) to submit feature requests and bug reports.
-
-## Contributions
-
-This project gladly accepts contributions. However, you must agree to give your work explicitely to public domain. To do so, just put this statement in the pull request definition:
-
-```
-I dedicate any and all copyright interest in this software to the
-public domain. I make this dedication for the benefit of the public at
-large and to the detriment of my heirs and successors. I intend this
-dedication to be an overt act of relinquishment in perpetuity of all
-present and future rights to this software under copyright law.
-```
-
-## License
-
-This software is given to the public domain. For more information, see the `UNLICENSE` file.
+*  grunt build
+* bump version
+* git tag -a v0.0.2 -m "Release version 0.0.2"
 
