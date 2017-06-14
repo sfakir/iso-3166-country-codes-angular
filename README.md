@@ -6,14 +6,25 @@ This project is an ISO 3166 (Country codes) module for AngularJS. It provides:
 
 * A service (factory) that gives access to all country codes
 * A filter to print country codes as their standard name (FR -> FRANCE)
+* The filter is locale depending for German and  English locale Settings  (FR-> France or Frankreich)
 * A validation directive to validate country codes
+
 
 ## Get it
 
 This library is available with the bower package manager, you can either:
 
 * Execute the following command: `bower install iso-3166-country-codes-angular --save`
-* Add this line in your dependencies: `"iso-3166-country-codes-angular": "1.1.1"`
+* Add this line in your dependencies: `"iso-3166-country-codes-angular": "1.2.1"`
+
+If you prefer using NPM, it is now available at npmjs.com. To get it you can either:
+
+* Execute the following command: `npm i iso-3166-country-codes-angular`
+* Add this line in your `package.json`: `"iso-3166-country-codes-angular": "1.2.1"`
+
+## Use it
+
+Add `iso-3166-country-codes`` to your module dependencies. 
 
 ## Features
 
@@ -25,6 +36,15 @@ You can have access to country codes information and several utilitary methods.
 // Declare the factory as dependency
 angular.module('myApp', ["iso-3166-country-codes"])
   .controller('MyCtrl', function (ISO3166) {
+
+        ISO3166.setLocale('de-de'); // or 'de' or 'de_DE', ...
+
+        $scope.countryList = ISO3166.codeToCountry; // list of German countries..
+        
+
+
+
+
     // Test if a value is a country code
     console.log(ISO3166.isCountryCode('FR')); // true
     console.log(ISO3166.isCountryCode('FRA')); // false
@@ -103,22 +123,9 @@ If you want users to enter country codes, you can validate it like so (it fits i
 </form>
 ```
 
-## Issues, Feature request
+## Release
 
-You can use [Github's issues](https://github.com/rsertelon/iso-3166-country-codes-angular/issues) to submit feature requests and bug reports.
+*  grunt build
+* bump version
+* git tag -a v0.0.2 -m "Release version 0.0.2"
 
-## Contributions
-
-This project gladly accepts contributions. However, you must agree to give your work explicitely to public domain. To do so, just put this statement in the pull request definition:
-
-```
-I dedicate any and all copyright interest in this software to the
-public domain. I make this dedication for the benefit of the public at
-large and to the detriment of my heirs and successors. I intend this
-dedication to be an overt act of relinquishment in perpetuity of all
-present and future rights to this software under copyright law.
-```
-
-## License
-
-This software is given to the public domain. For more information, see the `UNLICENSE` file.

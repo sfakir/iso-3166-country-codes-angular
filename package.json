@@ -1,22 +1,24 @@
 {
-  "name": "iso-3166-country-codes-angular",
-  "version": "1.2.1",
-  "description": "An AngularJS module to work with Country Codes",
+  "name": "iso-3166-country-codes-translations",
+  "version": "1.6.0",
+  "description": "An AngularJS module to work with Country Codes and in different locales",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rsertelon/iso-3166-country-codes-angular.git"
+    "url": "https://github.com/sfakir/iso-3166-country-codes-angular.git"
   },
   "main": "index.js",
   "keywords": [
     "Country",
     "Code",
     "ISO",
-    "3166"
+    "3166",
+    "German",
+    "English"
   ],
-  "author": "Romain Sertelon",
+  "author": "Romain Sertelon, Simon Fakir",
   "license": "Public Domain",
   "bugs": {
-    "url": "https://github.com/rsertelon/iso-3166-country-codes-angular/issues"
+    "url": "https://github.com/sfakir/iso-3166-country-codes-angular/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

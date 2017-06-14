@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'dist/iso-3166-country-codes-angular.min.js': ['src/iso-3166-country-codes-angular.js']
+          'dist/iso-3166-country-codes-translations.min.js': ['src/iso-3166-country-codes-translations.js']
         }
       }
     },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+  // Load the puildlugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
